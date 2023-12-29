@@ -1,0 +1,33 @@
+<div id=vantajs ngClass="loginPage">
+
+    <div ngClass="controls">
+            <h1>Galileo RTLS Aqua Smart</h1>
+            <h3>Water Flow Monitorem System provide flexible and expandable site monitoring housed in rugged, lockable enclosures, and multiple-card interface give you the ability to control and log multiple sensors remotely from a single web site.</h3>
+
+            <p-panel header="User Login">
+
+                <p><br></p><!--Line Jump-->
+                <span class="p-float-label">
+                    <input pInputText id="username" [(ngModel)]="userValue" [style]="{'width':'235px'}"/>
+                    <label htmlFor="username">Username</label>
+                </span>
+    
+                <p><br></p>
+    
+                <span class="p-float-label">
+                    <p-password [(ngModel)]="passwordValue" [toggleMask]="true" [feedback]="false" [inputStyle]="{'width':'235px'}"></p-password>
+                    <label htmlFor="password">Password</label>
+                </span>
+
+                <p><br></p>
+                <p-button (click)= "loginClick()" label="Login" [loading]="loading" [raised]="true" severity="secondary" [style]="{'width':'235px'}"></p-button>
+
+            </p-panel>
+            <p><br></p>
+            <h5>Copyright Galileo RTLS 2024 ©, Ingenieria y Tecnologia Aplicada NCO S.A. de C.V., OELILAG Innovacion Ciencia y Tecnologia S.A. de C.V., All the Rights Reserved</h5>
+            <h5>www.galileortls.com</h5>      
+    </div>   
+
+    <img src="./assets/images/logos/ingeniate.png" alt="logo" ngClass="ingeniatelogo">
+
+</div>
